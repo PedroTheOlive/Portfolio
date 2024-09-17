@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -8,13 +9,7 @@
 </head>
 
 <body>
-    <nav>
-        <ul class="nav">
-            <li>Home</li>
-            <li>Projects</li>
-            <li>Skills & Experiences</li>
-        </ul>
-    </nav>
+    <?php include( "../partial/nav.html") ?>
 
     <main>
         <div id="sidebar">
@@ -36,12 +31,6 @@
         </div>
     </main>
 
-    <footer>
-        <ul>
-            <li><b>Contact</b></li>
-            <li>Email: <a href="mailto:poa22@cornell.edu">poa22@cornell.edu</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/pedro-arruda-406444254?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRKkxmf1XQrqR2rwQrz%2F5gQ%3D%3D">linkedin.com</a></li>
-        </ul>
-    </footer>
+    
 </body>
 </html>
