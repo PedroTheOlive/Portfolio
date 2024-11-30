@@ -3,7 +3,7 @@
     "configurations": [
         {
             "name": "PHP Development Server",
-            "type": "php",
+            "type": "chrome",
             "request": "launch",
             "runtimeArgs": [
                 "-c", "${workspaceRoot}/.devcontainer/php.ini",
@@ -12,7 +12,7 @@
                 "router.php"
             ],
             "cwd": "${workspaceRoot}",
-            "port": 5500,
+            "port": 9000,
             "serverReadyAction": {
                 "pattern": "Development Server \\(http://127.0.0.1:([0-9]+)\\) started",
                 "uriFormat": "http://127.0.0.1:%s",

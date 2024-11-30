@@ -1,5 +1,5 @@
-/** Table Of Contents 
-*   
+/** Table Of Contents
+*
 *   Body
 *   Navigation
 *   Main
@@ -9,35 +9,36 @@
 
 
 /*    Body    */
-body{
-    background-color:tan;
+body {
+    background-color: tan;
 }
-body > *{
+
+body>* {
     max-width: 90%;
     margin: 0 5%;
     border: 3px solid black;
-    background-color:  rgb(255, 246, 164);
+    background-color: rgb(255, 246, 164);
 }
 
 /*    Navigation    */
-nav{
+nav {
     color: black;
     border-bottom: 1.5px solid black;
 }
 
-nav ul{
+nav ul {
     padding: 10px 8px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
 }
 
-nav ul li{
-    flex-grow:1;
+nav ul li {
+    flex-grow: 1;
 }
 
 /*    Main    */
-main{
+main {
     display: flex;
     flex-direction: row;
     border-top: 1.5px solid black;
@@ -45,40 +46,41 @@ main{
     min-height: 400px;
 }
 
-main div{
+main div {
     flex-grow: 10;
 }
 
-#sidebar{
+#sidebar {
     flex-grow: 1;
     display: flex;
     flex-direction: row;
     border-right: 3px solid black;
 }
 
-#sidebar ul{
+#sidebar ul {
     list-style-type: none;
 }
 
-#body{
+#body {
     display: flex;
     flex-direction: column;
 }
 
-#gallery{
+#gallery {
     flex-grow: 1;
 }
 
-#text{
+#text {
     flex-grow: 1;
 }
 
 /*    Footer    */
-footer{
+footer {
     border-top: 1.5px solid black;
     display: flex;
     flex-direction: row;
-    > ul{ 
+
+    >ul {
         list-style-type: none;
     }
 }
