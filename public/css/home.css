@@ -60,6 +60,19 @@ main div{
     list-style-type: none;
 }
 
+#body{
+    display: flex;
+    flex-direction: column;
+}
+
+#gallery{
+    flex-grow: 1;
+}
+
+#text{
+    flex-grow: 1;
+}
+
 /*    Footer    */
 footer{
     border-top: 1.5px solid black;
