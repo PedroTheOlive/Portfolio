@@ -2,39 +2,42 @@
 
 <head>
     <title>Portfolio - Pedro Arruda</title>
+    <meta id="currentPage" name="Home">
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <meta charset="utf-8">
 </head>
 
 <body>
-    <nav>
-        <ul class="nav">
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Projects</li>
-            <li>Skills & Experiences</li>
-        </ul>
-    </nav>
-
-    <main>
-        <div id="sidebar">
-            <ul>
-                <li>
-                    Side bar information
-                </li>
+    <div class="content shadow">
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html" id="Home">Home</a></li>
+                <li><a href="projects.html" id="Projects">Projects</a></li>
+                <li><a href="skills.html" id="Skills">Skills</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <div>main</div>
-    </main>
+        <main class="col">
+            <div class="row center">
+                <div>Image Space</div>
+                <div>Text space</div>
+            </div>
+            <div class="row center">
+                <div>Gallery space</div>
+            </div>
+        </main>
 
-    <footer>
-        <ul>
-            <li><b>Contact</b></li>
-            <li>Email: <a href="mailto:poa22@cornell.edu">poa22@cornell.edu</a></li>
-            <li>LinkedIn: <a href="www.linkedin.com">linkedin.com</a></li>
-        </ul>
-    </footer>
+        <footer>
+            <ul>
+                <li><b>Contact</b></li>
+                <li>Email: <a href="mailto:poa22@cornell.edu">poa22@cornell.edu</a></li>
+                <li>LinkedIn: <a href="www.linkedin.com">linkedin.com</a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
 
+<script src="scripts/nav.js"></script>
 </html>
