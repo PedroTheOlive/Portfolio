@@ -1,38 +1,66 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Projects - Pedro Arruda</title>
-    <meta id="currentPage" name="Projects">
-    <link rel="stylesheet" type="text/css" href="public/css/style.css">
-
+    <meta charset="UTF-8">
+    <meta name="Projects" id="currentPage">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Pedro Arruda</title>
+    <link rel="stylesheet" href="public/css/style.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <meta charset="utf-8">
 </head>
-
 <body>
     <div class="content shadow">
-        <nav>
-            <ul class="nav">
-                <li><a href="index.html" id="Home">Home</a></li>
-                <li><a href="projects.html" id="Projects">Projects</a></li>
-                <li><a href="skills.html" id="Skills">Skills</a></li>
-            </ul>
-        </nav>
+        <main class="projects-section col">
+            <h1 class="center">Projects</h1>
 
-        <main>
+            <div class="project-card">
+                <img src="public/images/projects/platformer.png" alt="2D Action Platformer Game">
+                <div class="project-text">
+                    <h2>Dreamwalker</h2>
+                    <p>
+                        Designed and implemented a 2D action platformer using <b>LibGDX</b> and <b>Figma</b>. 
+                        Created the complete in-game UI through <b>Figma</b>, integrating level assets through <b>Tiled</b> and <b>Photoshop</b>. 
+                        Collaborated in a small development team using version control for iterative design.
+                    </p>
+                    <a href="https://gdiac.cs.cornell.edu/gdiac/showcase/gallery/dreamwalker/" target="_blank" class="project-link">View on GDIAC</a>
+                </div>
+            </div>
 
-            <div>main</div>
+            <div class="project-card">
+                <img src="public/images/projects/cocktail.png" alt="Cocktail Enthusiasts Website">
+                <div class="project-text">
+                    <h2>Cocktail Enthusiasts Website</h2>
+                    <p>
+                        Built a responsive full-stack site using <b>PHP</b>, <b>SQLite</b>, and <b>Python</b>. 
+                        Implemented admin and user dashboards, featuring search and submission forms. 
+                        Focused on clean UI design and responsive accessibility.
+                    </p>
+                    <a href="https://github.com/example/cocktail-site" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="public/images/projects/rowing.png" alt="Cornell Rowing Club Website">
+                <div class="project-text">
+                    <h2>Cornell Rowing Club Website</h2>
+                    <p>
+                        Developed a lightweight static site for Cornell’s rowing club using <b>JavaScript</b>, <b>HTML</b>, and <b>CSS</b>. 
+                        Created an interactive gallery and optimized layouts for both mobile and desktop devices.
+                    </p>
+                    <a href="https://github.com/example/rowing-site" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+            </div>
         </main>
 
         <footer>
             <ul>
                 <li><b>Contact</b></li>
                 <li>Email: <a href="mailto:poa22@cornell.edu">poa22@cornell.edu</a></li>
-                <li>LinkedIn: <a href="www.linkedin.com">linkedin.com</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/pedro-o-arruda" target="_blank">linkedin.com/in/pedro-o-arruda</a></li>
             </ul>
         </footer>
     </div>
-</body>
 
-<script src="scripts/nav.js"></script>
+    <script src="scripts/nav.js"></script>
+</body>
 </html>
