@@ -37,7 +37,7 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid black;
     border-top:none;
     border-bottom:none;
-    border-radius: 5%;
+    border-radius: 99px;
 }
 
 /* Afterglow effect */
@@ -203,9 +203,51 @@ main {
     }
 }
 
-#ppic{
-    max-height: 800px;
-    max-width: 200px;
+.about-section {
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  
+.about-image img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 25px rgba(0, 17, 255, 0.6);
+    border: 2px solid black;
+  }
+  
+.about-text {
+    max-width: 650px;
+    color: silver;
+    text-align: left;
+  }
+  
+.about-text h1 {
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+  
+.about-text p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+  }
+  
+@media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+    }
+    .about-text {
+      text-align: center;
+    }
 }
 
 /* --- Gallery --- */
@@ -235,7 +277,10 @@ main {
 
 /* Individual image cards */
 .card {
-    flex: 0 0 auto;                    /* prevent shrinking */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
     width: 300px;
     height: 400px;
     border-radius: 20px;
@@ -246,13 +291,18 @@ main {
     box-shadow: 0 0 15px rgba(0, 17, 255, 0.3);
 }
 
+/* Image centering fix */
 .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;      /* keeps full image visible */
+    object-position: center;  /* centers image inside card */
     display: block;
-    transition: transform 0.5s ease;
+    margin: auto;
+    background-color: rgb(20, 20, 20); /* subtle backdrop for small images */
+    transition: transform .5s ease;
 }
+
 
 /* Hover lift/tilt effect */
 .card:hover {
@@ -334,14 +384,15 @@ main {
     background-color: rgb(45, 45, 45);
     border: 1px solid black;
     border-radius: 15px;
-    margin: 20px 10px;
+    margin: 20px 20px;
+    padding: 15px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 17, 255, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card img {
-    width: 250px;
+    width: 400px;
     height: auto;
     object-fit: cover;
     border-right: 1px solid black;
@@ -419,16 +470,103 @@ main {
     }
 }
 
+/* --- Video Modal --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal.active {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 25px rgba(0, 17, 255, 0.6);
+    max-width: 800px;
+    width: 90%;
+  }
+  
+  .modal-content video,
+  .modal-content iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  #closeModal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Background blur on modal open */
+  body.blurred .content.shadow {
+    filter: blur(5px) brightness(0.8);
+    transition: filter 0.3s ease;
+  }
+  
+  .hint {
+    font-size: 0.9rem;
+    color: rgba(200, 200, 200, 0.7);
+    margin-top: 8px;
+    font-style: italic;
+  }
+  
+
 
 
 
 /*    Footer    */
 footer {
-    border-top: 1.5px solid black;
     display: flex;
-    flex-direction: row;
-
-    >ul {
-        list-style-type: none;
-    }
-}
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  footer ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: silver;
+  }
+  
+  footer ul li {
+    margin: 5px 0;
+  }
+  
+  footer a {
+    color: rgba(0, 17, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: white;
+  }
+  

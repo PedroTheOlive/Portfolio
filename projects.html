@@ -11,35 +11,53 @@
 <body>
     <div class="content shadow">
         <main class="projects-section col">
-            <h1 class="center">Projects</h1>
+            <h1 class="center" style="color:silver;">Projects</h1>
 
             <div class="project-card">
-                <img src="public/images/projects/platformer.png" alt="2D Action Platformer Game">
+                <img src="public/images/projects/dreamwalker.png" alt="2D Action Platformer Game">
                 <div class="project-text">
-                    <h2>Dreamwalker</h2>
-                    <p>
-                        Designed and implemented a 2D action platformer using <b>LibGDX</b> and <b>Figma</b>. 
-                        Created the complete in-game UI through <b>Figma</b>, integrating level assets through <b>Tiled</b> and <b>Photoshop</b>. 
-                        Collaborated in a small development team using version control for iterative design.
-                    </p>
-                    <a href="https://gdiac.cs.cornell.edu/gdiac/showcase/gallery/dreamwalker/" target="_blank" class="project-link">View on GDIAC</a>
+                  <h2>2D Action Platformer Game</h2>
+                  <p>
+                    Designed and implemented a 2D action platformer using <b>LibGDX</b> and <b>Figma</b>. 
+                  </p>
+                  <p>
+                    Created the in-game UI and integrated assets with <b>Tiled</b> and <b>Photoshop</b>.
+                  </p>
+                  <a href="https://gdiac.cs.cornell.edu/gdiac/showcase/gallery/dreamwalker/" target="_blank" class="project-link">View on GDIAC</a>
                 </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card" data-video="public/videos/cocktail.mp4">
                 <img src="public/images/projects/cocktail.png" alt="Cocktail Enthusiasts Website">
                 <div class="project-text">
-                    <h2>Cocktail Enthusiasts Website</h2>
+                  <h2>Cocktail Enthusiasts Website</h2>
+                  <p>
+                    Built a responsive full-stack web app using PHP, SQLite, and Python.
+                    Implemented admin dashboards and modern responsive UI.
+                  </p>
+                  <p class="hint">🎥 Click to play demo</p>
+                </div>
+            </div>
+              
+
+            <div class="project-card" data-video="public/videos/info3300_final.mp4">
+                <img src="public/images/projects/info3300_final.png" alt="US Crime Visualization Website">
+                <div class="project-text">
+                    <h2>US Crime Visualization Website</h2>
                     <p>
-                        Built a responsive full-stack site using <b>PHP</b>, <b>SQLite</b>, and <b>Python</b>. 
-                        Implemented admin and user dashboards, featuring search and submission forms. 
-                        Focused on clean UI design and responsive accessibility.
+                        Developed an interactive website to view US Crime Statistics using <b>JS</b> and the <b>D3</b> library.
                     </p>
-                    <a href="https://github.com/example/cocktail-site" target="_blank" class="project-link">View on GitHub</a>
+                    <p>
+                        The focus of this project lied in interpreting large Json and CSV datasets, cleaning and formatting data, and displaying it in a visually informative way.
+                    </p>
+                    <p>
+                        Focused on interactivity features and in parsing datafiles for visualizations using D3.
+                    </p>
+                    <p class="hint">🎥 Click to play demo</p>
                 </div>
             </div>
 
-            <div class="project-card">
+            <div class="project-card"  data-video="public/videos/rowing.mp4">
                 <img src="public/images/projects/rowing.png" alt="Cornell Rowing Club Website">
                 <div class="project-text">
                     <h2>Cornell Rowing Club Website</h2>
@@ -47,20 +65,25 @@
                         Developed a lightweight static site for Cornell’s rowing club using <b>JavaScript</b>, <b>HTML</b>, and <b>CSS</b>. 
                         Created an interactive gallery and optimized layouts for both mobile and desktop devices.
                     </p>
-                    <a href="https://github.com/example/rowing-site" target="_blank" class="project-link">View on GitHub</a>
+                    <p class="hint">🎥 Click to play demo</p>
                 </div>
             </div>
         </main>
 
-        <footer>
-            <ul>
-                <li><b>Contact</b></li>
-                <li>Email: <a href="mailto:poa22@cornell.edu">poa22@cornell.edu</a></li>
-                <li>LinkedIn: <a href="https://linkedin.com/in/pedro-o-arruda" target="_blank">linkedin.com/in/pedro-o-arruda</a></li>
-            </ul>
-        </footer>
     </div>
 
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <video id="projectVideo" controls autoplay></video>
+        </div>
+    </div>
+  
+
     <script src="scripts/nav.js"></script>
+    <script src="scripts/videoModel.js"></script>
+    <script src="scripts/footer.js"></script>
+    
 </body>
 </html>

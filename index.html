@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="Home" id="currentPage">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pedro Arruda is a Cornell University Information Science student focused on UX/UI design, web development, and data visualization. He creates interactive, accessible, and data-driven experiences using JavaScript, D3.js, and modern web technologies.">
     <title>Home | Pedro Arruda</title>
     <link rel="stylesheet" href="public/css/style.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -14,33 +15,64 @@
     
 
         <main class="col">
-            <div class="row center">
-                <div>
-                    <img src="/public/images/profile.jpg" alt="Profile Picture" id="ppic">
+            <section class="row center about-section">
+                <div class="about-image">
+                  <img src="public/images/profile.jpg" alt="Pedro Arruda portrait" id="ppic">
                 </div>
-                <div>Text space</div>
-            </div>
+              
+                <div class="about-text">
+                  <h1>About Me</h1>
+                  <p>
+                    I’m <b>Pedro Arruda</b>, a Cornell University Information Science student focused on 
+                    <b>UX/UI design</b>, <b>web development</b>, and <b>data visualization</b>. 
+                    I enjoy combining design and programming to build clear, interactive, and meaningful user experiences.
+                  </p>
+              
+                  <p>
+                    My work spans visual design and full-stack development, with hands-on experience using 
+                    <b>JavaScript</b>, <b>Python</b>, <b>C++</b>, and <b>SQL</b>, along with tools like 
+                    <b>Figma</b>, <b>Photoshop</b>, and <b>D3.js</b>.  
+                    I focus on usability, data clarity, and accessibility — ensuring that each project feels intuitive and informative.
+                  </p>
+              
+                  <p>
+                    Recent projects include a <b>2D action platformer</b> built with LibGDX, a <b>cocktail enthusiasts website</b> 
+                    developed with PHP and SQLite, a <b>responsive website for the Cornell Rowing Club</b>, and an 
+                    <b>interactive data visualization platform</b> that explores U.S. crime statistics using <b>D3.js</b>.
+                  </p>
+              
+                  <p>
+                    In my crime visualization project, I developed an interactive website to explore national datasets, 
+                    focusing on data interpretation, cleaning, and presentation. The work involved parsing large JSON and CSV 
+                    files, structuring them for D3 visualizations, and designing an interface where users could 
+                    explore meaningful patterns in crime data across regions.
+                  </p>
+              
+                  <p>
+                    Across all of my work, I aim to bridge creativity and technical precision — designing solutions that are 
+                    functional, scalable, and engaging. I’m currently seeking opportunities in <b>product design</b>, 
+                    <b>UX/UI development</b>, or <b>front-end engineering</b> where I can continue to grow as both a designer and a developer.
+                  </p>
+              
+                  <a href="public/files/Resume_Pedro_Arruda.pdf" download class="cta-button">Download Resume</a>
+                </div>
+              </section>
+              
             <div class="gallery-wrapper">
                 <div class="gallery">
-                    <div class="card"><img src="public/images/img1.jpg" alt="Project 1"></div>
+                    <div class="card"><img src="public/images/projects/dreamwalker_card.png" alt="2D Action Platformer Game"></div>
                     <div class="card"><img src="public/images/img2.jpg" alt="Project 2"></div>
-                    <div class="card"><img src="public/images/img3.jpg" alt="Project 3"></div>
+                    <div class="card"><img src="public/images/projects/info3300_final.png" alt="US Crime Visualization Website"></div>
                     <div class="card"><img src="public/images/img4.jpg" alt="Project 4"></div>
                     <div class="card"><img src="public/images/img5.jpg" alt="Project 5"></div>
                 </div>
                 </div>
         </main>
 
-        <footer>
-            <ul>
-                <li><b>Contact</b></li>
-                <li>Email: <a href="mailto:poa22@cornell.edu">poa22@cornell.edu</a></li>
-                <li>LinkedIn: <a href="www.linkedin.com">linkedin.com</a></li>
-            </ul>
-        </footer>
     </div>
 </body>
 
 <script src="scripts/nav.js"></script>
 <script src="scripts/gallery.js"></script>
+<script src="scripts/footer.js"></script>
 </html>
