@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const video = document.getElementById("projectVideo");
     const closeModal = document.getElementById("closeModal");
   
-    document.querySelectorAll(".project-card").forEach(card => {
+    document.querySelectorAll(".project-vid").forEach(card => {
       card.addEventListener("click", () => {
         const videoSrc = card.getAttribute("data-video");
         if (videoSrc.includes("youtube.com")) {

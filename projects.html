@@ -13,7 +13,7 @@
         <main class="projects-section col">
             <h1 class="center" style="color:silver;">Projects</h1>
 
-            <div class="project-card">
+            <div class="project-card" id="p1">
                 <img src="public/images/projects/dreamwalker.png" alt="2D Action Platformer Game">
                 <div class="project-text">
                   <h2>2D Action Platformer Game</h2>
@@ -27,20 +27,25 @@
                 </div>
             </div>
 
-            <div class="project-card" data-video="public/videos/cocktail.mp4">
-                <img src="public/images/projects/cocktail.png" alt="Cocktail Enthusiasts Website">
+            <div class="project-card" id="p2">
+                <img src="public/images/projects/cocktail.jpg" alt="Cocktail Enthusiasts Website">
                 <div class="project-text">
                   <h2>Cocktail Enthusiasts Website</h2>
                   <p>
                     Built a responsive full-stack web app using PHP, SQLite, and Python.
                     Implemented admin dashboards and modern responsive UI.
                   </p>
-                  <p class="hint">🎥 Click to play demo</p>
+                  <div class="project-vid" data-video="public/videos/cocktail_client.mp4">
+                    <p class="hint">🎥 Click to play client demo</p>
+                  </div>
+                  <div class="project-vid" data-video="public/videos/cocktail_admin.mp4">
+                    <p class="hint">🎥 Click to play admin demo</p>
+                  </div>
                 </div>
             </div>
               
 
-            <div class="project-card" data-video="public/videos/info3300_final.mp4">
+            <div class="project-card" id="p3">
                 <img src="public/images/projects/info3300_final.png" alt="US Crime Visualization Website">
                 <div class="project-text">
                     <h2>US Crime Visualization Website</h2>
@@ -53,11 +58,13 @@
                     <p>
                         Focused on interactivity features and in parsing datafiles for visualizations using D3.
                     </p>
-                    <p class="hint">🎥 Click to play demo</p>
+                    <div  class="project-vid" data-video="public/videos/info3300_final.mp4">
+                        <p class="hint">🎥 Click to play demo</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="project-card"  data-video="public/videos/rowing.mp4">
+            <div class="project-card" id="p4"  data-video="public/videos/rowing.mp4">
                 <img src="public/images/projects/rowing.png" alt="Cornell Rowing Club Website">
                 <div class="project-text">
                     <h2>Cornell Rowing Club Website</h2>
