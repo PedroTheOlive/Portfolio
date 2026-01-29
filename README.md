@@ -1,3 +1,3 @@
 ## Portfolio
  
-This will act as a landing page/launcher for any web design projects I choose to create.
+This is my personal website that acts as an informational page for recruiters. This is a living project.
