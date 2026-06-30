@@ -5,7 +5,7 @@ function loadFooter() {
           <li><b>Contact</b></li>
           <li>Email: <a href="mailto:pedarruda@hotmail.com">pedarruda@hotmail.com</a></li>
           <li>LinkedIn: <a href="https://linkedin.com/in/pedro-o-arruda" target="_blank">linkedin.com/in/pedro-o-arruda</a></li>
-          <li>Resume: <a href="public/files/Resume_Pedro_Arruda.pdf" download>Download PDF</a></li>
+          <li>Resume: <a href="public/files/Resume.pdf" download>Download PDF</a></li>
         </ul>
       </footer>
     `;
