@@ -4,109 +4,264 @@
     <meta charset="UTF-8">
     <meta name="Projects" id="currentPage">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Selected UX, product, front-end, game UI, data visualization, and rapid prototyping projects by Pedro Arruda.">
     <title>Projects | Pedro Arruda</title>
     <link rel="stylesheet" href="public/css/style.css">
-    <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
     <div class="content shadow">
-        <main class="projects-section col">
-            <h1 class="center" style="color:silver;">Projects</h1>
+        <main class="projects-section">
+            <header class="page-header">
+                <p class="eyebrow">Portfolio</p>
+                <h1>Projects</h1>
+                <p>Case study previews across product strategy, UX/UI, game interfaces, data visualization, web development, and rapid prototyping.</p>
+            </header>
 
-            <div class="project-card" id="p1">
-                <img src="public/images/projects/dreamwalker.png" alt="2D Action Platformer Game">
+            <article class="project-card case-study-trigger" id="p1" data-case-study="case-p1">
+                <!-- TODO: Replace placeholder with a Cornell Gym Companion App screenshot. -->
+                <div class="project-placeholder" role="img" aria-label="Screenshot placeholder for Cornell Gym Companion App">Gym Companion</div>
                 <div class="project-text">
-                  <h2>2D Action Platformer Game</h2>
-                  <p>
-                    Designed and implemented a 2D action platformer using <b>LibGDX</b> and <b>Figma</b>. 
-                  </p>
-                  <p>
-                    Created the in-game UI and integrated assets with <b>Tiled</b> and <b>Photoshop</b>.
-                  </p>
-                  <a href="https://gdiac.cs.cornell.edu/gdiac/showcase/gallery/dreamwalker/" target="_blank" class="project-link">View on GDIAC</a>
+                    <p class="project-role">Product Management / UX Design</p>
+                    <h2>Cornell Gym Companion App</h2>
+                    <p>Led product planning and prototyping for a social fitness app designed to help Cornell students feel more confident navigating gym spaces, learning equipment, and connecting with workout partners.</p>
+                    <div class="tag-list"><span>Product Strategy</span><span>UX Research</span><span>Figma</span><span>Project Management</span><span>User Flows</span></div>
+                    <button class="case-study-button" type="button" data-case-study="case-p1" aria-label="Open Cornell Gym Companion App design path">View design path</button>
+                    <p class="hint">Demo, prototype, or case study link can be added here later.</p>
                 </div>
-            </div>
+            </article>
 
-            <div class="project-card" id="p2">
-                <img src="public/images/projects/cocktail.jpg" alt="Cocktail Enthusiasts Website">
+            <article class="project-card case-study-trigger" id="p2" data-case-study="case-p2">
+                <!-- TODO: Replace placeholder with a Hexcapade screenshot or key art. -->
+                <div class="project-placeholder" role="img" aria-label="Screenshot placeholder for Hexcapade">Hexcapade!</div>
                 <div class="project-text">
-                  <h2>Cocktail Enthusiasts Website</h2>
-                  <p>
-                    Built a responsive full-stack web app using PHP, SQLite, and Python.
-                    Implemented admin dashboards and modern responsive UI.
-                  </p>
-                  <div class="project-vid" data-video="public/videos/cocktail_client.mp4">
-                    <p class="hint">🎥 Click to play client demo</p>
-                  </div>
-                  <div class="project-vid" data-video="public/videos/cocktail_admin.mp4">
-                    <p class="hint">🎥 Click to play admin demo</p>
-                  </div>
+                    <p class="project-role">Design Lead / UI Lead</p>
+                    <h2>Hexcapade!</h2>
+                    <p>Served as Design and UI Lead for a cooperative mobile party game, creating interface assets, item visuals, and playtest-driven design iterations while coordinating design deadlines across the team.</p>
+                    <div class="tag-list"><span>Game UI</span><span>Figma</span><span>Photoshop</span><span>User Testing</span><span>Team Leadership</span></div>
+                    <button class="case-study-button" type="button" data-case-study="case-p2" aria-label="Open Hexcapade design path">View design path</button>
+                    <p class="hint">Gameplay video, store page, or case study link can be added here later.</p>
                 </div>
-            </div>
-              
+            </article>
 
-            <div class="project-card" id="p3">
-                <img src="public/images/projects/info3300_final.png" alt="US Crime Visualization Website">
+            <article class="project-card case-study-trigger" id="p3" data-case-study="case-p3">
+                <!-- TODO: Replace placeholder with a snowflake cutter prototype photo. -->
+                <div class="project-placeholder" role="img" aria-label="Screenshot placeholder for Automated Snowflake Cutter">Snowflake Cutter</div>
                 <div class="project-text">
-                    <h2>US Crime Visualization Website</h2>
-                    <p>
-                        Developed an interactive website to view US Crime Statistics using <b>JS</b> and the <b>D3</b> library.
-                    </p>
-                    <p>
-                        The focus of this project lied in interpreting large Json and CSV datasets, cleaning and formatting data, and displaying it in a visually informative way.
-                    </p>
-                    <p>
-                        Focused on interactivity features and in parsing datafiles for visualizations using D3.
-                    </p>
-                    <div  class="project-vid" data-video="public/videos/info3300_final.mp4">
-                        <p class="hint">🎥 Click to play demo</p>
+                    <p class="project-role">Designer / Rapid Prototyper</p>
+                    <h2>Automated Snowflake Cutter</h2>
+                    <p>Designed and prototyped a machine for cutting snowflake patterns using Fusion360, 3D printing, laser cutting, and Arduino-based hardware control.</p>
+                    <div class="tag-list"><span>Fusion360</span><span>Arduino</span><span>Rapid Prototyping</span><span>Laser Cutting</span><span>3D Printing</span></div>
+                    <button class="case-study-button" type="button" data-case-study="case-p3" aria-label="Open Automated Snowflake Cutter design path">View design path</button>
+                    <p class="hint">Prototype photos or process documentation can be added here later.</p>
+                </div>
+            </article>
+
+            <article class="project-card case-study-trigger" id="p4" data-case-study="case-p4">
+                <img src="public/images/projects/dreamwalker.png" alt="Dreamwalker 2D action platformer gameplay and UI preview">
+                <div class="project-text">
+                    <p class="project-role">UI Lead / Game Developer</p>
+                    <h2>Dreamwalker</h2>
+                    <p>Designed and implemented UI systems for a 2D action platformer, integrating visual assets into a playable game experience using LibGDX, Figma, Tiled, and Photoshop.</p>
+                    <div class="tag-list"><span>Game UI</span><span>LibGDX</span><span>Figma</span><span>Tiled</span><span>Photoshop</span></div>
+                    <button class="case-study-button" type="button" data-case-study="case-p4" aria-label="Open Dreamwalker design path">View design path</button>
+                    <a href="https://gdiac.cs.cornell.edu/gdiac/showcase/gallery/dreamwalker/" target="_blank" rel="noopener" class="project-link" aria-label="View Dreamwalker on the GDIAC showcase">View on GDIAC</a>
+                </div>
+            </article>
+
+            <article class="project-card case-study-trigger" id="p5" data-case-study="case-p5">
+                <img src="public/images/projects/info3300_final.png" alt="Interactive U.S. crime data visualization dashboard preview">
+                <div class="project-text">
+                    <p class="project-role">Data Visualization Developer</p>
+                    <h2>U.S. Crime Visualization Website</h2>
+                    <p>Built an interactive D3.js visualization platform for exploring U.S. crime data, with emphasis on data cleaning, visual clarity, and user-driven exploration across large CSV and JSON datasets.</p>
+                    <div class="tag-list"><span>D3.js</span><span>JavaScript</span><span>Data Visualization</span><span>CSV/JSON</span></div>
+                    <button class="case-study-button" type="button" data-case-study="case-p5" aria-label="Open U.S. Crime Visualization Website design path">View design path</button>
+                    <button class="project-vid" type="button" data-video="public/videos/Info3300_final.mp4" aria-label="Play U.S. Crime Visualization demo video">Play demo</button>
+                </div>
+            </article>
+
+            <article class="project-card case-study-trigger" id="p6" data-case-study="case-p6">
+                <img src="public/images/projects/cocktail.jpg" alt="Cocktail Enthusiasts Website interface preview">
+                <div class="project-text">
+                    <p class="project-role">Full-Stack Developer</p>
+                    <h2>Cocktail Enthusiasts Website</h2>
+                    <p>Developed a responsive full-stack website with client-facing features and admin tools using PHP, SQLite, HTML, CSS, and Python.</p>
+                    <div class="tag-list"><span>PHP</span><span>SQLite</span><span>Full-Stack</span><span>Responsive Design</span></div>
+                    <button class="case-study-button" type="button" data-case-study="case-p6" aria-label="Open Cocktail Enthusiasts Website design path">View design path</button>
+                    <div class="video-actions">
+                        <button class="project-vid" type="button" data-video="public/videos/cocktail_client.mp4" aria-label="Play Cocktail Enthusiasts client demo video">Client demo</button>
+                        <button class="project-vid" type="button" data-video="public/videos/cocktail_admin.mp4" aria-label="Play Cocktail Enthusiasts admin demo video">Admin demo</button>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="project-card" id="p4">
-                <img src="public/images/projects/rowing.png" alt="Cornell Rowing Club Website">
+            <article class="project-card case-study-trigger" id="p7" data-case-study="case-p7">
+                <!-- TODO: Replace placeholder with a Cornell Rowing Club website screenshot. -->
+                <div class="project-placeholder" role="img" aria-label="Screenshot placeholder for Cornell Rowing Club Website">Rowing Website</div>
                 <div class="project-text">
+                    <p class="project-role">Front-End Developer</p>
                     <h2>Cornell Rowing Club Website</h2>
-                    <p>
-                        Developed a lightweight static site for Cornell’s rowing club using <b>JavaScript</b>, <b>HTML</b>, and <b>CSS</b>. 
-                        Created an interactive gallery and optimized layouts for both mobile and desktop devices.
-                    </p>
-                    <div class="provect-vid"  data-video="public/videos/rowing.mp4">
-                        <p class="hint">🎥 Click to play demo</p>
-                    </div>
+                    <p>Developed a lightweight static site for Cornell's rowing club using JavaScript, HTML, and CSS, with an interactive gallery and layouts optimized for mobile and desktop viewing.</p>
+                    <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span></div>
+                    <button class="case-study-button" type="button" data-case-study="case-p7" aria-label="Open Cornell Rowing Club Website design path">View design path</button>
+                    <p class="hint">Demo video or live site link can be added here later.</p>
                 </div>
-            </div>
+            </article>
 
-            <div class="project-card" id="p5">
-                <img src="public/images/projects/room.png" alt="Room Visualization App Design">
+            <article class="project-card case-study-trigger" id="p8" data-case-study="case-p8">
+                <!-- TODO: Replace placeholder with a Room Visualization App Design screenshot. -->
+                <div class="project-placeholder" role="img" aria-label="Screenshot placeholder for Room Visualization App Design">Room Planner</div>
                 <div class="project-text">
+                    <p class="project-role">UX/UI Designer</p>
                     <h2>Room Visualization App Design</h2>
-                    <p>
-                        Leveraged Figma and HCI concepts to develop an app that allows users to plan out room designs. 
-                        Utilized user research practices to canvas our target audience and iterate over designs.
-                    </p>
-                    <div class="project-vid" data-video="public/videos/room.mp4">
-                        <p class="hint">🎥 Click to play demo</p>
-                    </div>
+                    <p>Created a Figma prototype for a room planning app, using HCI concepts, user research, and design iteration to help people preview layout choices before rearranging their space.</p>
+                    <div class="tag-list"><span>Figma</span><span>UX Research</span><span>Wireframing</span><span>Prototyping</span></div>
+                    <button class="case-study-button" type="button" data-case-study="case-p8" aria-label="Open Room Visualization App Design design path">View design path</button>
+                    <p class="hint">Prototype or walkthrough video can be added here later.</p>
                 </div>
-            </div>
-        </main>
+            </article>
 
+            <section class="page-cta" aria-labelledby="projects-contact-title">
+                <div>
+                    <p class="eyebrow">Next step</p>
+                    <h2 id="projects-contact-title">Want the quick version?</h2>
+                    <p>Download the resume or reach out directly for a focused walkthrough of the work most relevant to your role.</p>
+                </div>
+                <div class="button-row">
+                    <a class="button primary" href="public/files/Resume.pdf" download aria-label="Download Pedro Arruda resume as a PDF">Download Resume</a>
+                    <a class="button" href="mailto:pedarruda@hotmail.com" aria-label="Email Pedro Arruda">Contact Pedro</a>
+                </div>
+            </section>
+        </main>
     </div>
 
-    <!-- Video Modal -->
-    <div id="videoModal" class="modal">
-        <div class="modal-content">
-        <span id="closeModal">&times;</span>
-        <video id="projectVideo" controls autoplay></video>
+    <div id="caseStudyModal" class="case-study-modal" aria-hidden="true">
+        <div class="case-study-dialog" role="dialog" aria-modal="true" aria-labelledby="caseStudyTitle">
+            <button id="closeCaseStudy" class="case-study-close" type="button" aria-label="Close design path">&times;</button>
+            <div id="caseStudyContent" class="case-study-content" tabindex="-1"></div>
         </div>
     </div>
-  
+
+    <template id="case-p1">
+        <article class="case-study-detail">
+            <p class="eyebrow">Case Study Template</p>
+            <h2>Cornell Gym Companion App</h2>
+            <p class="case-study-role">Product Management / UX Design</p>
+            <section>
+                <h3>Problem</h3>
+                <p>TODO: Describe the user problem, target students, and why this experience mattered.</p>
+            </section>
+            <section>
+                <h3>Research & Insights</h3>
+                <p>TODO: Add interviews, observations, survey notes, competitive research, or key findings.</p>
+            </section>
+            <section>
+                <h3>Design Direction</h3>
+                <p>TODO: Explain user flows, information architecture, sketches, wireframes, and Figma decisions.</p>
+            </section>
+            <section>
+                <h3>Iteration & Outcome</h3>
+                <p>TODO: Add playtest/usability feedback, changes made, and what the final prototype achieved.</p>
+            </section>
+        </article>
+    </template>
+
+    <template id="case-p2">
+        <article class="case-study-detail">
+            <p class="eyebrow">Case Study Template</p>
+            <h2>Hexcapade!</h2>
+            <p class="case-study-role">Design Lead / UI Lead</p>
+            <section><h3>Challenge</h3><p>TODO: Describe the game design/UI challenge and team constraints.</p></section>
+            <section><h3>UI & Asset Process</h3><p>TODO: Add interface assets, item visuals, style exploration, and production notes.</p></section>
+            <section><h3>Playtesting</h3><p>TODO: Summarize feedback loops, design changes, and coordination decisions.</p></section>
+            <section><h3>Result</h3><p>TODO: Add final contribution, shipped materials, screenshots, or lessons learned.</p></section>
+        </article>
+    </template>
+
+    <template id="case-p3">
+        <article class="case-study-detail">
+            <p class="eyebrow">Case Study Template</p>
+            <h2>Automated Snowflake Cutter</h2>
+            <p class="case-study-role">Designer / Rapid Prototyper</p>
+            <section><h3>Concept</h3><p>TODO: Explain the initial concept, constraints, and intended user or demonstration context.</p></section>
+            <section><h3>Prototype Path</h3><p>TODO: Add Fusion360, fabrication, Arduino, and physical computing steps.</p></section>
+            <section><h3>Testing</h3><p>TODO: Describe mechanical tests, failures, material changes, and iteration notes.</p></section>
+            <section><h3>Final Build</h3><p>TODO: Add photos, final behavior, and what you would improve next.</p></section>
+        </article>
+    </template>
+
+    <template id="case-p4">
+        <article class="case-study-detail">
+            <p class="eyebrow">Case Study Template</p>
+            <h2>Dreamwalker</h2>
+            <p class="case-study-role">UI Lead / Game Developer</p>
+            <section><h3>Game Context</h3><p>TODO: Describe the player experience, UI goals, and production role.</p></section>
+            <section><h3>Interface Design</h3><p>TODO: Add HUD, menus, visual asset decisions, and Figma/Photoshop process.</p></section>
+            <section><h3>Implementation</h3><p>TODO: Explain LibGDX/Tiled integration and technical design tradeoffs.</p></section>
+            <section><h3>Outcome</h3><p>TODO: Add screenshots, showcase results, and iteration takeaways.</p></section>
+        </article>
+    </template>
+
+    <template id="case-p5">
+        <article class="case-study-detail">
+            <p class="eyebrow">Case Study Template</p>
+            <h2>U.S. Crime Visualization Website</h2>
+            <p class="case-study-role">Data Visualization Developer</p>
+            <section><h3>Data Question</h3><p>TODO: Describe the questions users needed to explore and the dataset constraints.</p></section>
+            <section><h3>Data Preparation</h3><p>TODO: Add cleaning, JSON/CSV parsing, and structure decisions.</p></section>
+            <section><h3>Visualization Design</h3><p>TODO: Explain chart choices, interaction patterns, and visual hierarchy.</p></section>
+            <section><h3>Result</h3><p>TODO: Add demo notes, usability improvements, and final insights.</p></section>
+        </article>
+    </template>
+
+    <template id="case-p6">
+        <article class="case-study-detail">
+            <p class="eyebrow">Case Study Template</p>
+            <h2>Cocktail Enthusiasts Website</h2>
+            <p class="case-study-role">Full-Stack Developer</p>
+            <section><h3>Product Need</h3><p>TODO: Describe users, admin needs, and core website requirements.</p></section>
+            <section><h3>Design & Architecture</h3><p>TODO: Add responsive design choices, database structure, and PHP/SQLite decisions.</p></section>
+            <section><h3>Build Process</h3><p>TODO: Explain client/admin workflows, implementation details, and testing.</p></section>
+            <section><h3>Outcome</h3><p>TODO: Add final screenshots, demos, and future improvements.</p></section>
+        </article>
+    </template>
+
+    <template id="case-p7">
+        <article class="case-study-detail">
+            <p class="eyebrow">Case Study Template</p>
+            <h2>Cornell Rowing Club Website</h2>
+            <p class="case-study-role">Front-End Developer</p>
+            <section><h3>Goal</h3><p>TODO: Describe the club audience, content goals, and site constraints.</p></section>
+            <section><h3>Design Path</h3><p>TODO: Add layout, gallery, content hierarchy, and mobile decisions.</p></section>
+            <section><h3>Implementation</h3><p>TODO: Explain HTML/CSS/JavaScript features and responsive work.</p></section>
+            <section><h3>Result</h3><p>TODO: Add live/demo link, screenshots, and impact.</p></section>
+        </article>
+    </template>
+
+    <template id="case-p8">
+        <article class="case-study-detail">
+            <p class="eyebrow">Case Study Template</p>
+            <h2>Room Visualization App Design</h2>
+            <p class="case-study-role">UX/UI Designer</p>
+            <section><h3>User Need</h3><p>TODO: Describe the planning problem and target users.</p></section>
+            <section><h3>Research</h3><p>TODO: Add user research, HCI concepts, and findings.</p></section>
+            <section><h3>Prototype</h3><p>TODO: Add wireframes, Figma screens, flows, and design rationale.</p></section>
+            <section><h3>Iteration</h3><p>TODO: Add feedback, revisions, and final prototype notes.</p></section>
+        </article>
+    </template>
+
+    <div id="videoModal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-label="Project video player">
+            <button id="closeModal" type="button" aria-label="Close video">&times;</button>
+            <div class="video-frame">
+                <video id="projectVideo" controls></video>
+            </div>
+        </div>
+    </div>
 
     <script src="scripts/nav.js"></script>
+    <script src="scripts/caseStudyModal.js"></script>
     <script src="scripts/videoModel.js"></script>
     <script src="scripts/footer.js"></script>
-    
 </body>
 </html>

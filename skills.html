@@ -4,82 +4,58 @@
     <meta charset="UTF-8">
     <meta name="Skills" id="currentPage">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pedro Arruda's recruiter-friendly skills profile across UX/UI design, product, development, game UI, and rapid prototyping.">
     <title>Skills | Pedro Arruda</title>
     <link rel="stylesheet" href="public/css/style.css">
-    <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
     <div class="content shadow">
-        <main class="skills-section col">
-            <h1 class="center">Skills & Tools</h1>
+        <main class="skills-section">
+            <header class="page-header">
+                <p class="eyebrow">Recruiter skim</p>
+                <h1>Skills & Tools</h1>
+                <p>I combine user-centered design, technical implementation, and iterative product thinking to build clear, usable digital experiences.</p>
+            </header>
 
-            <!-- Overview -->
-            <section class="skills-overview">
-                <p>
-                    I combine a foundation in <b>user-centered design</b> with strong <b>technical implementation</b> skills 
-                    to create digital experiences that are both intuitive and scalable. My focus lies in blending design 
-                    thinking with front-end and back-end development to build accessible, modern, and responsive products.
-                </p>
+            <section class="skill-card-grid large">
+                <article class="skill-card">
+                    <h2>Design & Product</h2>
+                    <div class="tag-list"><span>Figma</span><span>Photoshop</span><span>UX Research</span><span>Wireframing</span><span>Prototyping</span><span>Usability Testing</span><span>Project Management</span></div>
+                </article>
+
+                <article class="skill-card">
+                    <h2>Development</h2>
+                    <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>Java</span><span>C++</span><span>PHP</span><span>SQL</span><span>D3.js</span></div>
+                </article>
+
+                <article class="skill-card">
+                    <h2>Game Design</h2>
+                    <div class="tag-list"><span>Game UI</span><span>LibGDX</span><span>Tiled</span><span>Playtesting</span><span>Asset Integration</span></div>
+                </article>
+
+                <article class="skill-card">
+                    <h2>Rapid Prototyping</h2>
+                    <div class="tag-list"><span>Fusion360</span><span>Arduino</span><span>Laser Cutting</span><span>3D Printing</span><span>Physical Computing</span></div>
+                </article>
+
+                <article class="skill-card">
+                    <h2>Professional Strengths</h2>
+                    <div class="tag-list"><span>Team Leadership</span><span>Cross-Functional Collaboration</span><span>Presentation</span><span>Documentation</span><span>Iteration from Feedback</span></div>
+                </article>
             </section>
 
-            <!-- Design -->
-            <section class="skill-group">
-                <h2>🎨 Design & Prototyping</h2>
-                <p>
-                    Skilled at transforming concepts into functional interfaces through structured design workflows 
-                    and visual clarity.
-                </p>
-                <ul class="skill-list">
-                    <li><b>Figma</b> - wireframing, prototyping, and component design systems</li>
-                    <li><b>Photoshop</b> - digital asset creation and interface detailing</li>
-                    <li><b>Usability Testing</b> - conducting feedback sessions and refining UI based on data</li>
-                    <li><b>Accessibility Design</b> - ensuring WCAG-compliant layouts and inclusive color palettes</li>
-                </ul>
-            </section>
-
-            <!-- Web Dev -->
-            <section class="skill-group">
-                <h2>💻 Web Development</h2>
-                <p>
-                    Experienced in building responsive and accessible websites with modern front-end and back-end tools.
-                </p>
-                <ul class="skill-list">
-                    <li><b>HTML5 / CSS3 / JavaScript</b> - responsive layouts and interactivity</li>
-                    <li><b>SQL</b> - database creation and query optimization</li>
-                    <li><b>Python</b> - backend logic and data handling</li>
-                    <li><b>PHP</b> - full-stack web-development</li>
-                    <li><b>Git</b> - version control and team-based project coordination</li>
-                </ul>
-            </section>
-
-            <!-- Programming -->
-            <section class="skill-group">
-                <h2>⚙️ Programming</h2>
-                <p>
-                    Adept at solving complex technical problems using structured logic, algorithms, and clean code practices.
-                </p>
-                <ul class="skill-list">
-                    <li><b>Python</b> - scripting, data processing, and automation</li>
-                    <li><b>Java</b> - object-oriented programming and interface development</li>
-                    <li><b>C++</b> - algorithmic efficiency and performance optimization</li>
-                    <li><b>C, OCaml</b> - foundational understanding of systems-level programming</li>
-                </ul>
-            </section>
-
-            <!-- Other -->
-            <section class="skill-group">
-                <h2>📈 Additional Strengths</h2>
-                <p>
-                    Versatile professional experience balancing technical execution with leadership and collaboration.
-                </p>
-                <ul class="skill-list">
-                    <li><b>Project Management</b> - coordination, timeline management, and cross-functional communication</li>
-                    <li><b>Team Collaboration</b> - active contribution in agile and academic project teams</li>
-                    <li><b>Public Communication</b> - clear presentation of technical concepts to diverse audiences</li>
-                </ul>
+            <section class="page-cta" aria-labelledby="skills-contact-title">
+                <div>
+                    <p class="eyebrow">Available for</p>
+                    <h2 id="skills-contact-title">UX/UI, product, front-end, software, and game UI roles.</h2>
+                    <p>For a shorter overview, use the resume. For project depth, the Projects page now has expandable design paths.</p>
+                </div>
+                <div class="button-row">
+                    <a class="button primary" href="public/files/Resume.pdf" download aria-label="Download Pedro Arruda resume as a PDF">Download Resume</a>
+                    <a class="button" href="projects.html">View Projects</a>
+                </div>
             </section>
         </main>
-
     </div>
 
     <script src="scripts/nav.js"></script>

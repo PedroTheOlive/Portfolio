@@ -4,76 +4,167 @@
     <meta charset="UTF-8">
     <meta name="Home" id="currentPage">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pedro Arruda is a Cornell University Information Science student focused on UX/UI design, web development, and data visualization. He creates interactive, accessible, and data-driven experiences using JavaScript, D3.js, and modern web technologies.">
+    <meta name="description" content="Pedro Arruda is a Cornell Information Science graduate focused on UX/UI design, product design, front-end development, software engineering, and game UI design.">
     <title>Home | Pedro Arruda</title>
     <link rel="stylesheet" href="public/css/style.css">
-    <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 
 <body>
     <div class="content shadow">
-    
+        <main class="home-page">
+            <section class="hero-section" aria-labelledby="hero-title">
+                <div class="hero-copy">
+                    <p class="eyebrow">Portfolio for design, product, and front-end roles</p>
+                    <h1 id="hero-title">Pedro Arruda</h1>
+                    <p class="hero-role">UX/UI Designer &middot; Product Builder &middot; Front-End Developer</p>
+                    <p class="hero-summary">
+                        Cornell Information Science graduate focused on designing and building interactive digital products,
+                        game interfaces, data tools, and rapid prototypes.
+                    </p>
+                    <div class="button-row" aria-label="Primary portfolio links">
+                        <a class="button primary" href="projects.html">View Projects</a>
+                        <a class="button" href="public/files/Resume.pdf" download aria-label="Download Pedro Arruda resume as a PDF">Download Resume</a>
+                        <a class="button" href="https://linkedin.com/in/pedro-o-arruda" target="_blank" rel="noopener" aria-label="Visit Pedro Arruda on LinkedIn">LinkedIn</a>
+                        <a class="button" href="https://github.com/PedroTheOlive" target="_blank" rel="noopener" aria-label="Visit Pedro Arruda on GitHub">GitHub</a>
+                    </div>
+                </div>
+                <div class="hero-portrait">
+                    <img src="public/images/profile.jpg" alt="Portrait of Pedro Arruda">
+                </div>
+            </section>
 
-        <main class="col">
-            <section class="row center about-section">
-                <div class="about-image">
-                  <img src="public/images/profile.jpg" alt="Pedro Arruda portrait" id="ppic">
+            <section class="section-block" aria-labelledby="featured-title">
+                <div class="section-heading">
+                    <p class="eyebrow">Selected work</p>
+                    <h2 id="featured-title">Featured Projects</h2>
                 </div>
-              
-                <div class="about-text">
-                  <h1>About Me</h1>
-                  <p>
-                    I’m <b>Pedro Arruda</b>, a Cornell University Information Science student focused on 
-                    <b>UX/UI design</b>, <b>web development</b>, and <b>data visualization</b>. 
-                    I enjoy combining design and programming to build clear, interactive, and meaningful user experiences.
-                  </p>
-              
-                  <p>
-                    My work spans visual design and full-stack development, with hands-on experience using 
-                    <b>JavaScript</b>, <b>Python</b>, <b>C++</b>, and <b>SQL</b>, along with tools like 
-                    <b>Figma</b>, <b>Photoshop</b>, and <b>D3.js</b>.  
-                    I focus on usability, data clarity, and accessibility — ensuring that each project feels intuitive and informative.
-                  </p>
-              
-                  <p>
-                    Recent projects include a <b>2D action platformer</b> built with LibGDX, a <b>cocktail enthusiasts website</b> 
-                    developed with PHP and SQLite, a <b>responsive website for the Cornell Rowing Club</b>, and an 
-                    <b>interactive data visualization platform</b> that explores U.S. crime statistics using <b>D3.js</b>.
-                  </p>
-              
-                  <p>
-                    In my crime visualization project, I developed an interactive website to explore national datasets, 
-                    focusing on data interpretation, cleaning, and presentation. The work involved parsing large JSON and CSV 
-                    files, structuring them for D3 visualizations, and designing an interface where users could 
-                    explore meaningful patterns in crime data across regions.
-                  </p>
-              
-                  <p>
-                    Across all of my work, I aim to bridge creativity and technical precision — designing solutions that are 
-                    functional, scalable, and engaging. I’m currently seeking opportunities in <b>product design</b>, 
-                    <b>UX/UI development</b>, or <b>front-end engineering</b> where I can continue to grow as both a designer and a developer.
-                  </p>
-              
-                  <a href="public/files/Resume.pdf" download class="cta-button">Download Resume</a>
+
+                <div class="featured-grid">
+                    <article class="feature-card">
+                        <!-- TODO: Replace placeholder with a Cornell Gym Companion App screenshot. -->
+                        <div class="project-placeholder" role="img" aria-label="Screenshot placeholder for Cornell Gym Companion App">Gym Companion</div>
+                        <div class="card-copy">
+                            <p class="project-role">Product Management / UX Design</p>
+                            <h3>Cornell Gym Companion App</h3>
+                            <p>Led product planning and prototyping for a social fitness app designed to help Cornell students feel more confident navigating gym spaces, learning equipment, and connecting with workout partners.</p>
+                            <div class="tag-list" aria-label="Cornell Gym Companion App skills">
+                                <span>Product Strategy</span><span>UX Research</span><span>Figma</span><span>Project Management</span><span>User Flows</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <!-- TODO: Replace placeholder with a Hexcapade screenshot or key art. -->
+                        <div class="project-placeholder" role="img" aria-label="Screenshot placeholder for Hexcapade">Hexcapade!</div>
+                        <div class="card-copy">
+                            <p class="project-role">Design Lead / UI Lead</p>
+                            <h3>Hexcapade!</h3>
+                            <p>Served as Design and UI Lead for a cooperative mobile party game, creating interface assets, item visuals, and playtest-driven design iterations while coordinating design deadlines across the team.</p>
+                            <div class="tag-list" aria-label="Hexcapade skills">
+                                <span>Game UI</span><span>Figma</span><span>Photoshop</span><span>User Testing</span><span>Team Leadership</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <!-- TODO: Replace placeholder with a snowflake cutter prototype photo. -->
+                        <div class="project-placeholder" role="img" aria-label="Screenshot placeholder for Automated Snowflake Cutter">Snowflake Cutter</div>
+                        <div class="card-copy">
+                            <p class="project-role">Designer / Rapid Prototyper</p>
+                            <h3>Automated Snowflake Cutter</h3>
+                            <p>Designed and prototyped a machine for cutting snowflake patterns using Fusion360, 3D printing, laser cutting, and Arduino-based hardware control.</p>
+                            <div class="tag-list" aria-label="Automated Snowflake Cutter skills">
+                                <span>Fusion360</span><span>Arduino</span><span>Rapid Prototyping</span><span>Laser Cutting</span><span>3D Printing</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <img src="public/images/projects/dreamwalker_card.png" alt="Dreamwalker game interface preview">
+                        <div class="card-copy">
+                            <p class="project-role">UI Lead / Game Developer</p>
+                            <h3>Dreamwalker</h3>
+                            <p>Designed and implemented UI systems for a 2D action platformer, integrating visual assets into a playable game experience using LibGDX, Figma, Tiled, and Photoshop.</p>
+                            <div class="tag-list" aria-label="Dreamwalker skills">
+                                <span>Game UI</span><span>LibGDX</span><span>Figma</span><span>Tiled</span><span>Photoshop</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <img src="public/images/projects/info3300_final.png" alt="Interactive U.S. crime data visualization preview">
+                        <div class="card-copy">
+                            <p class="project-role">Data Visualization Developer</p>
+                            <h3>U.S. Crime Visualization</h3>
+                            <p>Built an interactive D3.js visualization platform for exploring U.S. crime data, focusing on data cleaning, visual clarity, and user-driven exploration.</p>
+                            <div class="tag-list" aria-label="U.S. Crime Visualization skills">
+                                <span>D3.js</span><span>JavaScript</span><span>Data Visualization</span><span>CSV/JSON</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <img src="public/images/projects/cocktail.jpg" alt="Cocktail Enthusiasts Website responsive interface preview">
+                        <div class="card-copy">
+                            <p class="project-role">Full-Stack Developer</p>
+                            <h3>Cocktail Enthusiasts Website</h3>
+                            <p>Developed a responsive full-stack website with client-facing features and admin tools using PHP, SQLite, HTML, CSS, and Python.</p>
+                            <div class="tag-list" aria-label="Cocktail Enthusiasts Website skills">
+                                <span>PHP</span><span>SQLite</span><span>Full-Stack</span><span>Responsive Design</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-              </section>
-              
-            
-            <div class="gallery-wrapper">
-                <div class="gallery">
-                    <div class="card"><a href="projects.html#p1"><img src="public/images/projects/dreamwalker_card.png" alt="2D Action Platformer Game"></a></div>
-                    <div class="card"><a href="projects.html#p2"><img src="public/images/projects/cocktail.jpg" alt="Cocktail Enthusiast Website"></a></div>
-                    <div class="card"><a href="projects.html#p3"><img src="public/images/projects/info3300_final.png" alt="US Crime Visualization Website"></a></div>
-                    <div class="card"><a href="projects.html#p4"><img src="public/images/img4.jpg" alt="Project 4"></a></div>
-                    <div class="card"><a href="projects.html#p5"><img src="public/images/img5.jpg" alt="Project 5"></a></div>
+            </section>
+
+            <section class="section-block skills-preview" aria-labelledby="skills-preview-title">
+                <div class="section-heading">
+                    <p class="eyebrow">Core toolkit</p>
+                    <h2 id="skills-preview-title">Skills Preview</h2>
                 </div>
-              </div>
+                <div class="skill-card-grid">
+                    <article class="skill-card">
+                        <h3>Design & Product</h3>
+                        <p>Figma, Photoshop, UX Research, Wireframing, Prototyping, Usability Testing, Project Management</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Development</h3>
+                        <p>HTML, CSS, JavaScript, Python, Java, C++, PHP, SQL, D3.js</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Game & Prototype Systems</h3>
+                        <p>Game UI, LibGDX, Tiled, Playtesting, Fusion360, Arduino, Laser Cutting, 3D Printing</p>
+                    </article>
+                </div>
+                <a class="text-link" href="skills.html">See full skills profile</a>
+            </section>
+
+            <section class="section-block about-brief" aria-labelledby="about-title">
+                <div class="section-heading">
+                    <p class="eyebrow">About</p>
+                    <h2 id="about-title">Designer-developer who moves ideas into working products.</h2>
+                </div>
+                <p>
+                    I work across research, interface design, prototyping, and implementation. My projects combine visual clarity
+                    with practical engineering, from game interfaces and data visualization to full-stack web tools and physical prototypes.
+                    I am currently seeking roles where I can contribute to thoughtful product experiences and keep building across design and code.
+                </p>
+            </section>
+
+            <section class="section-block cta-section" id="contact" aria-labelledby="contact-title">
+                <div>
+                    <p class="eyebrow">Let's connect</p>
+                    <h2 id="contact-title">Open to UX/UI, product design, front-end, software, and game UI roles.</h2>
+                </div>
+                <div class="button-row">
+                    <a class="button primary" href="mailto:pedarruda@hotmail.com" aria-label="Email Pedro Arruda">Contact Pedro</a>
+                    <a class="button" href="public/files/Resume.pdf" download aria-label="Download Pedro Arruda resume as a PDF">Download Resume</a>
+                </div>
+            </section>
         </main>
-
     </div>
-</body>
 
-<script src="scripts/nav.js"></script>
-<script src="scripts/gallery.js"></script>
-<script src="scripts/footer.js"></script>
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/footer.js"></script>
+</body>
 </html>
