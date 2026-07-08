@@ -39,6 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    function resetCaseStudyScroll() {
+        content.scrollTop = 0;
+        content.scrollLeft = 0;
+        content.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    }
+
     function openCaseStudy(templateId, opener) {
         const template = document.getElementById(templateId);
         if (!template) return;
@@ -47,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Clone the matching template so you can edit case-study content in HTML.
         content.replaceChildren(template.content.cloneNode(true));
-        content.scrollTop = 0;
+        resetCaseStudyScroll();
 
         modal.classList.add("active");
         modal.setAttribute("aria-hidden", "false");
@@ -59,6 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         content.focus();
+
+        // Reset after focus/layout so a previous modal scroll position cannot carry over.
+        requestAnimationFrame(resetCaseStudyScroll);
     }
 
     function closeCaseStudy() {
